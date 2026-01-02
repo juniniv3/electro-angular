@@ -1,12 +1,15 @@
 {
   "name": "electro-angular",
   "version": "0.0.0",
+  "main": "src/electron/main.ts",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "electron": "ng build --base-href ./ && electron ."
   },
   "prettier": {
     "printWidth": 100,
@@ -36,6 +39,7 @@
     "@angular/cli": "^20.3.5",
     "@angular/compiler-cli": "^20.3.0",
     "@types/jasmine": "~5.1.0",
+    "electron": "^39.2.7",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
