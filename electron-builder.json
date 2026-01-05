@@ -1,0 +1,29 @@
+{
+    "appId": "com.electron.electro-angular",
+    "productName": "Electro Angular",
+    "directories": {
+        "output": "dist"
+    },
+    "files": [
+        "dist/electro-angular/browser/**/*",
+        "dist-electron/**/*"
+    ],
+    "extraMetadata": {
+        "main": "dist-electron/main.js"
+    },
+    "extraFiles": [
+        {
+            "from": "public",
+            "to": ""
+        }
+    ],
+    "win": {
+        "target": "msi"
+    },
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage"
+    }
+}
